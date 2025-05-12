@@ -13,6 +13,7 @@ import Footer from "../components/Footer";
 import Section3 from "../sections/Section3";
 import video1 from "/helios/helios.mp4";
 import helios5 from "/helios/bottles.jpeg";
+import Section2 from "../sections/Section2";
 
 const Home = () => {
   const logoArr = [
@@ -110,7 +111,7 @@ const Home = () => {
         />
       </section>
       <div className="h-[10vh] bg-white w-full"></div>
-
+      <Section2 />
       <Section3 />
       <Footer />
     </div>
