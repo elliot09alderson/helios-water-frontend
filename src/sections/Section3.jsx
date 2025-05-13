@@ -44,17 +44,17 @@ const Section3 = () => {
             <p className="italic  text-sky-700">
               {" "}
               trusted brand of packaged drinking water in India. Having a strong
-              presence, with 122 operational plants (13 owned) and a strong{" "}
+              presence, with 3 operational plants (completely owned) and a
+              strong{" "}
             </p>{" "}
             <p>
               {" "}
-              distribution network of 4500 Distributors & 5000 Distribution
-              trucks across India & neighbouring countries, helios stands true
-              to{" "}
+              distribution network of 45+ Distributors & 8 Distribution vehicle
+              across State & neighbouring States, helios stands true to{" "}
             </p>{" "}
             <p className="italic  text-sky-700">
               its promise of providing safe, pure & healthy water to consumers
-              for the last 50 years.
+              for the last 2 years.
             </p>
           </div>
         </div>

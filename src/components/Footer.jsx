@@ -127,22 +127,19 @@ const Footer = () => {
         </section>
 
         <section className="flex flex-col  gap-5  w-full ">
-          <h3 className="text-lg font-semibold mb-8 text-slate-700">Contact</h3>
-          <address className="not-italic mb-2 text-slate-500">
-            Helios International Pvt. Ltd.
-            <br />
-            CTS No. 525/1A/1, Western Express Highway,
-            <br />
-            Opp Hindustan Unilever, at Chakala Division,
-            <br />
-            Andheri (East), Mumbai - 400 099
-            <br />
+          <h3 className="text-lg font-semibold  text-slate-700">Contact</h3>
+          <address className="not-italic mb-2  flex flex-col gap-4 text-slate-500">
+            <p>HELIOS AQUA Pvt. Ltd.</p>
+            <p>Khairagarh, Chhattisgarh 491441 ,</p>
+            <p>08306861416</p>
+            <p>near 93HR+56 Aveli,</p>
+            <p>Chhattisgarh</p>
           </address>
           <a
             href="tel:18001211007"
             className="block mb-1 hover:underline hover:text-blue-100"
           >
-            Call: 1800 121 1007
+            Call: 08306861416
           </a>
           <a
             href="mailto:callwecare@Helios.co.in"
@@ -150,9 +147,7 @@ const Footer = () => {
           >
             Email: callwecare@Helios.co.in
           </a>
-          <div className="mb-3 text-slate-500">
-            8 AM to 8 PM (Monday to Saturday)
-          </div>
+          <div className="mb-3 text-slate-500">8 AM to 8 PM (24 * 7 * 365)</div>
 
           <div
             className="flex gap-8 w-full items-center justify-bwteen "
