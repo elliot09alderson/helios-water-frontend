@@ -14,7 +14,7 @@ import Section3 from "../sections/Section3";
 import video1 from "/helios/helios.mp4";
 import helios5 from "/helios/bottles.jpeg";
 import Section2 from "../sections/Section2";
-
+import watermark from "/helios/watermark.png";
 const Home = () => {
   const logoArr = [
     { logo: logo1, text: "Vedica - Himalayan Spring Water" },
@@ -97,6 +97,11 @@ const Home = () => {
         <img
           src={bottle2}
           className="w-[600px] rotate-45 object-cover absolute lg:top-[800px]  top-[80%]  right-[100px]"
+          alt=""
+        />
+        <img
+          src={watermark}
+          className="absolute  h-[150vh] object-cover lg:w-[100vw]"
           alt=""
         />
         <img
