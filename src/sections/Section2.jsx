@@ -38,7 +38,7 @@ const Section2 = () => {
           <div class="flex flex-col gap-10 py-20 ">
             <div class="gap-10">
               <div class="flex justify-between text-lg">
-                <p class="text-3xl text-[#4D4C4C] font-bold">36</p>
+                <p class="text-3xl text-[#4D4C4C] font-bold">3</p>
                 <p class="text-[#4D4C4C] text-3xl font-bold">34</p>
               </div>
               <div class="text-[#4D4C4C] flex justify-between mt-[3px] mb-3 w-full lg:w-[29vw] h-[2px]">
@@ -48,8 +48,8 @@ const Section2 = () => {
             </div>
             <div class="gap-10">
               <div class="flex justify-between text-lg">
-                <p class="text-3xl text-[#4D4C4C] font-bold">5343</p>
-                <p class="text-[#4D4C4C] text-3xl font-bold">1272</p>
+                <p class="text-3xl text-[#4D4C4C] font-bold">53+</p>
+                <p class="text-[#4D4C4C] text-3xl font-bold">18+</p>
               </div>
               <div class="text-[#4D4C4C] flex justify-between mt-[3px] mb-3 w-full lg:w-[29vw] h-[2px]">
                 <h1>Residential Welfare Association</h1>
@@ -58,8 +58,8 @@ const Section2 = () => {
             </div>
             <div class="gap-10">
               <div class="flex justify-between text-lg">
-                <p class="text-3xl text-[#4D4C4C] font-bold">1669</p>
-                <p class="text-[#4D4C4C] text-3xl font-bold">1093</p>
+                <p class="text-3xl text-[#4D4C4C] font-bold">120</p>
+                <p class="text-[#4D4C4C] text-3xl font-bold">54</p>
               </div>
               <div class="text-[#4D4C4C] flex justify-between mt-[3px] mb-3 w-full lg:w-[29vw] h-[2px]">
                 <h1>Educational Institutes</h1>
@@ -69,11 +69,11 @@ const Section2 = () => {
             <div class="gap-10">
               <div class="flex justify-between text-lg">
                 <p class="text-3xl text-[#4D4C4C] font-bold">2.63 M</p>
-                <p class="text-[#4D4C4C] text-3xl font-bold">14716</p>
+                <p class="text-[#4D4C4C] text-3xl font-bold">1471</p>
               </div>
               <div class="text-[#4D4C4C] flex justify-between mt-[3px] mb-3 w-full lg:w-[29vw] h-[2px]">
-                <h1>Citizens</h1>
-                <h2>Metric Tone Of Used Plastic Collected And Recycled</h2>
+                <h1>Tones of water Distributed</h1>
+                <h2>Kilograms Of Used Plastic Collected And Recycled</h2>
               </div>
             </div>
             <div class="flex justify-between pt-12">
