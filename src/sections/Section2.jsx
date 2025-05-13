@@ -1,6 +1,6 @@
 import React from "react";
 import img1 from "/helios/section2.jpg";
-import img2 from "/helios/bottle6.png";
+import img2 from "/helios/section21.png";
 const Section2 = () => {
   return (
     <div class="relative lg:px-[500px] px-4">
@@ -15,7 +15,7 @@ const Section2 = () => {
       </div>
       <div class="flex flex-col lg:flex-row items-center justify-evenly min-h-[100vh]">
         <img
-          class="lg:w-[400px] lg:h-[100vh] h-fit w-64 object-cover  pb-12 top-5"
+          class="lg:w-[400px] lg:h-[86vh] h-fit w-64 object-cover  pb-12 top-5"
           src={img2}
           alt=""
         />
