@@ -15,11 +15,12 @@ import video1 from "/helios/helios.mp4";
 import helios5 from "/helios/bottles.jpeg";
 import Section2 from "../sections/Section2";
 import watermark from "/helios/watermark.png";
+import Requirement from "../sections/Requirement";
 const Home = () => {
   const logoArr = [
-    { logo: logo1, text: "Vedica - Himalayan Spring Water" },
-    { logo: logo2, text: "Carbonated Soft Drinks" },
-    { logo: logo3, text: "Carbonated Soft Drinks" },
+    { logo: logo1, text: " Water Cans" },
+    { logo: logo2, text: "Water Bottles" },
+    { logo: logo3, text: "Water Packets" },
   ];
   return (
     <div className=" ">
@@ -83,6 +84,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <Requirement />
       <section className="bg-gradient-to-r from-[#74ebd5] overflow-hidden to-[#acb6e5]  relative lg:px-[400px] h-[150vh] px-8 flex flex-col items-center">
         <img
           src={bottle}
@@ -91,7 +94,7 @@ const Home = () => {
         />
         <img
           src={bottle}
-          className="lg:w-[600px] w-[300px] rotate-3 object-cover absolute lg:top-32 top-64 rotate-45 duration-2000 right-24"
+          className="lg:w-[600px] w-[300px]  object-cover absolute lg:top-32 top-64 rotate-45 duration-2000 right-24"
           alt=""
         />{" "}
         <img

@@ -17,11 +17,10 @@ const Footer = () => {
 
   const Links2 = [
     { text: "Helios", link: "/" },
-    { text: "Vedica", link: "/" },
-    { text: "Helios Soda", link: "/" },
-    { text: "Limonata", link: "/" },
-    { text: "Helios Soda", link: "/" },
-    { text: "Pop", link: "/" },
+    { text: "Helios Water Cans", link: "/" },
+    { text: "Helios Water Packets", link: "/" },
+    { text: "Helios Bottles", link: "/" },
+    { text: "Booking Services for Functions", link: "/" },
   ];
   return (
     <footer className=" text-slate-500 lg:px-[300px] px-4 bg-sky-200 w-full min-h-[70vh] mx-auto font-sans text-sm leading-relaxed flex py-20">
