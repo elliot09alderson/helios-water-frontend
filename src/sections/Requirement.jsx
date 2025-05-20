@@ -24,7 +24,7 @@ const Requirement = () => {
       .min(Yup.ref("fromDate"), "End date must be after start date"),
     budget: Yup.number()
       .required("Budget is required")
-      .min(100, "Budget must be at least $100"),
+      .min(100, "Budget must be at least ₹100"),
     quantity: Yup.number().required("Quantity is required"),
 
     description: Yup.string()
@@ -44,7 +44,7 @@ const Requirement = () => {
     validationSchema,
     onSubmit: (values, { resetForm }) => {
       console.log("asdasdasdasdadsads");
-      const YOUR_WHATSAPP_NUMBER = "+91 8306861416";
+      const YOUR_WHATSAPP_NUMBER = "+918306861416";
       // Format the WhatsApp message
       const message = `New Order Requirement:
     
@@ -52,7 +52,7 @@ const Requirement = () => {
       From Date: ${values.fromDate}
       To Date: ${values.toDate}
       quantity:${values.quantity}
-      Budget: $${values.budget}
+      Budget: ₹${values.budget}
       Description: ${values.description}
       
       Please contact me regarding this request.`;
