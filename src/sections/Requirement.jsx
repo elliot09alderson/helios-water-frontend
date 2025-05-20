@@ -9,6 +9,7 @@ import {
   FaMoneyBillWave,
   FaComment,
   FaWhatsapp,
+  FaWater,
 } from "react-icons/fa";
 const Requirement = () => {
   // Form validation schema using Yup
@@ -83,31 +84,34 @@ const Requirement = () => {
         <img
           src={mercedes}
           alt=""
-          className="w-[464px] relative z-10  rounded-l-xl"
+          className="hidden lg:block w-[464px] min-h-[47vh] relative z-10  object-cover rounded-l-xl"
         />
         <div className="p-10 border-gray-300 border z-10 rounded-r-xl bg-white shadow-md ">
           <div className="text-center flex flex-col gap-2 my-6">
             <h2 className="text-4xl font-bold text-gray-800">
               Finding the best deal in market ?
             </h2>
-            <p className="mt-2 text-gray-600">
-              Tell us what kind of car you're looking for and we'll find the
+            <p className="mt-2 text-sm italic lg:text-lg my-4 text-gray-600">
+              Tell us what kind of item you're looking for and we'll find the
               perfect match!
             </p>
           </div>
 
-          <form onSubmit={formik.handleSubmit} className="space-y-6 w-[800px]">
+          <form
+            onSubmit={formik.handleSubmit}
+            className="space-y-6 lg:w-[800px]"
+          >
             {/* Car Model Field */}
             <div>
               <label
                 htmlFor="carModel"
                 className="block text-sm font-medium text-gray-700"
               >
-                Car Model
+                Requirement for
               </label>
               <div className="mt-1 relative rounded-md shadow-sm">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                  <FaCar className="h-5 w-5 text-gray-400" />
+                  <FaWater className="h-5 w-5 text-gray-400" />
                 </div>
                 <input
                   type="text"
@@ -117,7 +121,7 @@ const Requirement = () => {
                   onBlur={formik.handleBlur}
                   value={formik.values.carModel}
                   className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                  placeholder="e.g. Toyota Camry 2020"
+                  placeholder="e.g. 20 Water Jars "
                 />
               </div>
               {formik.touched.carModel && formik.errors.carModel ? (
@@ -206,7 +210,7 @@ const Requirement = () => {
                   onBlur={formik.handleBlur}
                   value={formik.values.budget}
                   className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                  placeholder="e.g. 5000"
+                  placeholder="800"
                 />
               </div>
               {formik.touched.budget && formik.errors.budget ? (
@@ -236,7 +240,7 @@ const Requirement = () => {
                   onBlur={formik.handleBlur}
                   value={formik.values.description}
                   className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                  placeholder="Tell us more about your requirements (color, features, etc.)"
+                  placeholder="Tell us more about your requirements "
                 />
               </div>
               {formik.touched.description && formik.errors.description ? (
