@@ -11,6 +11,7 @@ import {
   FaWhatsapp,
   FaWater,
 } from "react-icons/fa";
+import { FaBottleWater } from "react-icons/fa6";
 const Requirement = () => {
   // Form validation schema using Yup
   const validationSchema = Yup.object().shape({
@@ -42,11 +43,12 @@ const Requirement = () => {
     },
     validationSchema,
     onSubmit: (values, { resetForm }) => {
-      const YOUR_WHATSAPP_NUMBER = "+918306861416";
+      console.log("asdasdasdasdadsads");
+      const YOUR_WHATSAPP_NUMBER = "+91 8306861416";
       // Format the WhatsApp message
       const message = `New Order Requirement:
     
-      Requirement for: ${values.carModel}
+      Requirement for: ${values.requirement}
       From Date: ${values.fromDate}
       To Date: ${values.toDate}
       quantity:${values.quantity}
@@ -104,7 +106,7 @@ const Requirement = () => {
             {/* Car Model Field */}
             <div>
               <label
-                htmlFor="carModel"
+                htmlFor="requirement"
                 className="block text-sm font-medium text-gray-700"
               >
                 Requirement for
@@ -115,18 +117,47 @@ const Requirement = () => {
                 </div>
                 <input
                   type="text"
-                  id="carModel"
-                  name="carModel"
+                  id="requirement"
+                  name="requirement"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  value={formik.values.carModel}
+                  value={formik.values.requirement}
                   className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                   placeholder="e.g. 20 Water Jars "
                 />
               </div>
-              {formik.touched.carModel && formik.errors.carModel ? (
+              {formik.touched.requirement && formik.errors.requirement ? (
                 <p className="mt-2 text-sm text-red-600">
-                  {formik.errors.carModel}
+                  {console.log(formik.errors)}
+                  {formik.errors.requirement}
+                </p>
+              ) : null}
+            </div>
+            <div>
+              <label
+                htmlFor="fromDate"
+                className="block text-sm font-medium text-gray-700"
+              >
+                Quantity
+              </label>
+              <div className="mt-1 relative rounded-md shadow-sm">
+                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                  <FaBottleWater className="h-5 w-5 text-gray-400" />
+                </div>
+                <input
+                  type="number"
+                  id="quantity"
+                  name="quantity"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.quantity}
+                  className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                  placeholder="e.g. 10"
+                />
+              </div>
+              {formik.touched.quantity && formik.errors.quantity ? (
+                <p className="mt-2 text-sm text-red-600">
+                  {formik.errors.quantity}
                 </p>
               ) : null}
             </div>
